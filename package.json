@@ -17,7 +17,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "gulp": "^4.0.2",
-    "gulp-bookmarklet": "github:rpavlik/bookmarklet#babel7",
+    "gulp-bookmarklet": "github:rpavlik/gulp-bookmarklet#babel7",
     "gulp-buffer": "0.0.2",
     "gulp-clean-dir": "^1.0.2",
     "gulp-eslint": "^6.0.0",
