@@ -15,7 +15,7 @@ const buffer = require('gulp-buffer');
 const terser = require('gulp-terser');
 const replace = require('gulp-replace');
 const rename = require('gulp-rename');
-const deploy = require('gulp-gh-pages');
+const ghPages = require('gulp-gh-pages');
 
 const entryPoints = 'app/*.js';
 const files = 'app/{,*/}*.js';
@@ -95,7 +95,13 @@ function watchTask(cb) {
   cb();
 }
 
+function deployTask() {
+  return src(outDir + '/**/*')
+      .pipe(ghPages());
+}
+
 exports.default = series(cleanTask, parallel(checkTask, allBuilds), watchTask);
 exports.check = series(checkTask);
 exports.build = parallel(checkTask, allBuilds);
 exports.clean = cleanTask;
+exports.deploy = series(cleanTask, parallel(checkTask, allBuilds), deployTask);
