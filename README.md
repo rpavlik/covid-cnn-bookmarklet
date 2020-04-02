@@ -1,7 +1,12 @@
 # covid-cnn-bookmarklet
+
 Generate bookmarklets to get to the latest CNN live news page for COVID-19.
 
-## To build:
+## Using
+
+It's deployed on GitHub Pages: <https://rpavlik.github.io/covid-cnn-bookmarklet/>
+
+## To build
 
 ```sh
 npm install
