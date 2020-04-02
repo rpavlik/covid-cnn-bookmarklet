@@ -76,12 +76,11 @@ function htmlTask() {
 
 function jsTask() {
   return getEntryPoints()
+      // Write the raw JS files
+      .pipe(dest(outDir))
+      // Write the bookmarklet-ified js files
       .pipe(bookmarklet())
       .pipe(dest(outDir));
-}
-
-function bareJsTask() {
-  return getEntryPoints().pipe(dest(outDir));
 }
 
 function cleanTask(cb) {
@@ -89,7 +88,7 @@ function cleanTask(cb) {
   cb();
 }
 
-const allBuilds = parallel(bareJsTask, jsTask, htmlTask);
+const allBuilds = parallel(jsTask, htmlTask);
 
 function watchTask(cb) {
   watch(
