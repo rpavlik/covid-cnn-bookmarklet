@@ -26,7 +26,6 @@
     "gulp-replace": "^1.0.0",
     "gulp-tap": "^2.0.0",
     "gulp-terser": "^1.2.0",
-    "merge-stream": "^2.0.0",
     "rollup-stream": "^1.24.1"
   },
   "engines": {
