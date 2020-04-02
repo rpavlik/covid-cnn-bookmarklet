@@ -30,18 +30,18 @@ export function yesterday() {
  */
 export function getArticle(d) {
   return (
-    'coronavirus-outbreak-' +
+    'coronavirus-pandemic-' +
     String(d.getMonth() + 1).padStart(2, '0') +
     '-' +
     String(d.getDate()).padStart(2, '0') +
-    '-20-intl-hnk/'
+    '-20-intl/'
   );
 }
 
 /** Get the desktop article URL.
  * @param {Date} d Date for article URL.
  *
- * @return {String} url
+ * @return {String} url, like https://www.cnn.com/world/live-news/coronavirus-pandemic-04-02-20-intl/
  */
 export function getMainUrl(d) {
   return 'https://www.cnn.com/world/live-news/' + getArticle(d);
