@@ -16,6 +16,7 @@ const terser = require('gulp-terser');
 const replace = require('gulp-replace');
 const rename = require('gulp-rename');
 const inject = require('gulp-inject-string');
+const ghPages = require('@justeat/gulp-gh-pages');
 
 const entryPoints = 'app/*.js';
 const files = 'app/{,*/}*.js';
