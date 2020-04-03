@@ -4,7 +4,14 @@ Generate bookmarklets to get to the latest CNN live news page for COVID-19.
 
 ## Using
 
-It's deployed on GitHub Pages: <https://rpavlik.github.io/covid-cnn-bookmarklet/>
+It's deployed on GitHub Pages:
+
+- All javascript links (bookmarklet links) on one page: <https://rpavlik.github.io/covid-cnn-bookmarklet/>
+- Single-purpose pages that redirect immediately:
+  - [Today's link](https://rpavlik.github.io/covid-cnn-bookmarklet/today.html)
+  - [Yesterday's link](https://rpavlik.github.io/covid-cnn-bookmarklet/yesterday.html)
+  - [Today's AMP link](https://rpavlik.github.io/covid-cnn-bookmarklet/today_amp.html)
+  - [Yesterday's AMP link](https://rpavlik.github.io/covid-cnn-bookmarklet/yesterday_amp.html)
 
 ## To build
 
