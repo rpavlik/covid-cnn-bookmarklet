@@ -106,6 +106,11 @@ function watchTask(cb) {
   cb();
 }
 
+function ciTask() {
+  return src(outDir + '/**/*')
+      .pipe(ghPages({push: false}));
+
+}
 function deployTask() {
   return src(outDir + '/**/*')
       .pipe(ghPages());
@@ -116,3 +121,4 @@ exports.check = series(checkTask);
 exports.build = parallel(checkTask, allBuilds);
 exports.clean = cleanTask;
 exports.deploy = series(cleanTask, parallel(checkTask, allBuilds), deployTask);
+exports.prepDeploy = series(cleanTask, parallel(checkTask, allBuilds), ciTask);
