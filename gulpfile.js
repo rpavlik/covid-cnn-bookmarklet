@@ -15,7 +15,7 @@ const buffer = require('gulp-buffer');
 const terser = require('gulp-terser');
 const replace = require('gulp-replace');
 const rename = require('gulp-rename');
-const ghPages = require('gulp-gh-pages');
+const inject = require('gulp-inject-string');
 
 const entryPoints = 'app/*.js';
 const files = 'app/{,*/}*.js';
@@ -70,6 +70,16 @@ function htmlTask() {
       .pipe(dest(outDir));
 }
 
+function redirTask() {
+  return getEntryPoints()
+      .pipe(inject.replace('javascript:', 'window.onload ='))
+      .pipe(inject.wrap('<html><script>', '</script></html>'))
+      .pipe(rename((path) => {
+        path.basename = path.basename.replace('.min', '');
+        path.extname = '.html';
+      }))
+      .pipe(dest(outDir));
+}
 function jsTask() {
   return getEntryPoints()
       // Write the raw JS files
@@ -84,7 +94,7 @@ function cleanTask(cb) {
   cb();
 }
 
-const allBuilds = parallel(jsTask, htmlTask);
+const allBuilds = parallel(jsTask, htmlTask, redirTask);
 
 function watchTask(cb) {
   watch(
