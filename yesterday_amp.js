@@ -37,4 +37,4 @@ function(t){return"https://amp.cnn.com/cnn/world/live-news/"+
  *
  * @return {String} last component of the article URL
  */
-function(t){return"coronavirus-pandemic-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")+"-20-intl/"}(t)}(function(){const t=new Date(Date.now());return t.setDate(t.getDate()-1),t}())}();
+function(t){return"coronavirus-pandemic-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")+"-20/"}(t)}(function(){const t=new Date(Date.now());return t.setDate(t.getDate()-1),t}())}();
