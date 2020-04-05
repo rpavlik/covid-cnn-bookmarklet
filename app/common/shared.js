@@ -23,6 +23,7 @@ export function yesterday() {
   d.setDate(d.getDate() - 1);
   return d;
 }
+
 /** Get the last component of the article URL.
  * @param {Date} d Date for article URL.
  *
@@ -34,7 +35,7 @@ export function getArticle(d) {
     String(d.getMonth() + 1).padStart(2, '0') +
     '-' +
     String(d.getDate()).padStart(2, '0') +
-    '-20-intl/'
+    '-20/'
   );
 }
 
