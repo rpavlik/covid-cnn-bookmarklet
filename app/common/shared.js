@@ -30,13 +30,12 @@ export function yesterday() {
  * @return {String} last component of the article URL
  */
 export function getArticle(d) {
-  return (
-    'coronavirus-pandemic-intl-' +
-    String(d.getMonth() + 1).padStart(2, '0') +
-    '-' +
-    String(d.getDate()).padStart(2, '0') +
-    '-20/'
-  );
+  return [
+    'coronavirus-pandemic-intl',
+    String(d.getMonth() + 1).padStart(2, '0'),
+    String(d.getDate()).padStart(2, '0'),
+    '20/',
+  ].join('-');
 }
 
 /** Get the desktop article URL.
