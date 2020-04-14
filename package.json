@@ -14,7 +14,6 @@
     "bhttp": "^1.2.6",
     "bookmarklet": "github:rpavlik/bookmarklet#babel7",
     "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.20.1",
