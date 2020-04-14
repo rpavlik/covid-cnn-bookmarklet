@@ -31,7 +31,7 @@ window.location="https://www.cnn.com/world/live-news/"+
  *
  * @return {String} last component of the article URL
  */
-function(t){return"coronavirus-pandemic-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")+"-20/"}
+function(t){return"coronavirus-pandemic-intl-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")+"-20/"}
 /** Get the desktop article URL.
  * @param {Date} d Date for article URL.
  *
