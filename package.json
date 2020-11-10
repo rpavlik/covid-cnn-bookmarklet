@@ -30,7 +30,7 @@
     "gulp-tap": "^2.0.0",
     "gulp-terser": "^1.2.0",
     "mocha": "^7.1.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "rollup-stream": "^1.24.1"
   },
   "engines": {
