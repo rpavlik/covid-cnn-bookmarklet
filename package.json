@@ -7,7 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/rpavlik/covid-cnn-bookmarklet.git"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/preset-env": "^7.9.0",
     "@justeat/gulp-gh-pages": "git+https://github.com/justeat/gulp-gh-pages.git",
