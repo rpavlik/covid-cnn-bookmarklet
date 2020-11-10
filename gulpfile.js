@@ -8,7 +8,7 @@ const {src, dest, watch, series, parallel} = require('gulp');
 
 const eslint = require('gulp-eslint');
 const cleanDir = require('gulp-clean-dir');
-const bookmarklet = require('gulp-bookmarklet');
+const bookmarklet = require('gulp-bookmarklet-babel7');
 const rollup = require('rollup-stream');
 const tap = require('gulp-tap');
 const buffer = require('gulp-buffer');
