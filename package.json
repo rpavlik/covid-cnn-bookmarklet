@@ -1,6 +1,6 @@
 {
   "name": "covid-cnn-bookmarklet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates bookmarklets to access most recent CNN daily live news page on COVID-19.",
   "license": "MIT",
   "repository": {
