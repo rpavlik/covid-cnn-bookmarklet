@@ -10,7 +10,6 @@
   "devDependencies": {
     "@babel/preset-env": "^7.9.0",
     "@justeat/gulp-gh-pages": "git+https://github.com/justeat/gulp-gh-pages.git#6370575b11bc777b1dfdcda051db60c77a00f4e8",
-    "bookmarklet-babel7": "git+https://github.com/rpavlik/bookmarklet.git#babel7",
     "chai": "^4.2.0",
     "eslint": "^7.13.0",
     "eslint-config-google": "^0.14.0",
@@ -19,7 +18,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
-    "gulp-bookmarklet-babel7": "git+https://github.com/rpavlik/gulp-bookmarklet.git#babel7",
+    "gulp-bookmarklet-babel7": "^2.0.0",
     "gulp-buffer": "0.0.2",
     "gulp-clean-dir": "^1.0.2",
     "gulp-eslint": "^6.0.0",
