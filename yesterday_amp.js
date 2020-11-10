@@ -33,7 +33,7 @@ window.location=
  *
  * @return {String} url
  */
-function(t){return"https://amp.cnn.com/cnn/world/live-news/"+function(t){return["coronavirus-pandemic-intl",String(t.getMonth()+1).padStart(2,"0"),String(t.getDate()).padStart(2,"0"),"20"].join("-")}
+function(t){return"https://amp.cnn.com/cnn/world/live-news/"+function(t){return["coronavirus-pandemic",String(t.getMonth()+1).padStart(2,"0"),String(t.getDate()).padStart(2,"0"),"20-intl"].join("-")}
 /** Get a Date for today.
  * @return {Date}
 */

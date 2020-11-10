@@ -14,7 +14,7 @@
  */
 // Copyright 2020, Ryan Pavlik <ryan.pavlik@gmail.com>
 // SPDX-License-Identifier: MIT
-window.location="https://amp.cnn.com/cnn/world/live-news/"+function(n){return["coronavirus-pandemic-intl",String(n.getMonth()+1).padStart(2,"0"),String(n.getDate()).padStart(2,"0"),"20"].join("-")}
+window.location="https://amp.cnn.com/cnn/world/live-news/"+function(n){return["coronavirus-pandemic",String(n.getMonth()+1).padStart(2,"0"),String(n.getDate()).padStart(2,"0"),"20-intl"].join("-")}
 /** Get a Date for today.
  * @return {Date}
 */(new Date(Date.now()))+"/"}();
