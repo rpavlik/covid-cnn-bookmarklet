@@ -2,6 +2,10 @@
 
 Generate bookmarklets to get to the latest CNN live news page for COVID-19.
 
+## Note
+
+A year and a half in, CNN does not always have a daily live page for COVID, so this might not work, but I'm leaving it up as an example.
+
 ## Using
 
 It's deployed on GitHub Pages:
